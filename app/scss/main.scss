@@ -31,10 +31,48 @@ body {
 	}
 }
 
-#result {
-	margin-top: 30px;
+h1 {
+	text-align: center;
 }
 
+form {
+	text-align: center;
+}
+
+//Бегунок (Input Range)
+input[type=range] {
+	-webkit-appearance: none;
+}
+
+input[type=range] {
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: #dddddd;
+	border: none;
+	border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: goldenrod;
+}
+
+//Выбор параметров
+.param {
+	display: inline-block;
+	padding: 10px;
+}
+
+#resultField {
+	text-align: center;
+	font-size: 40px;
+	padding: 100px 0;
+}
 
 
 @import "media"; // Always at the end

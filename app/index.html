@@ -33,34 +33,32 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<h1>Генератор паролей</h1>
 				<form>
-					<div>
-						<label for="generatorRange">Колличество символов (<span id="passwordLength">10</span>)</label>
-						<input type="range" id="generatorRange" value="10" max="50" />
-					</div>
-
-					<div>
+					<label for="generatorRange">Колличество символов (<span id="passwordLength">12</span>)</label>
+					<input type="range" id="generatorRange" value="12" max="22" />
+					
+					<div class="param">
 						<input type="checkbox" id="param1" checked>
 						<label for="param1">Цифры</label>
 					</div>
-
-					<div>
+					
+					<div class="param">
 						<input type="checkbox" id="param2" checked>
 						<label for="param2">Строчные буквы</label>
 					</div>
-
-					<div>
+					
+					<div class="param">
 						<input type="checkbox" id="param3">
 						<label for="param3">Прописныее буквы</label>
 					</div>
-
-					<div>
+					
+					<div class="param">
 						<input type="checkbox" id="param4">
 						<label for="param4">Спецсимволы</label>
 					</div>
-
+					<br>				
 					<button type="button" id="generatorButton">Сгенерировать</button>
 				</form>
 			</div>
